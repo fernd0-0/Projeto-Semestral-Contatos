@@ -1,0 +1,69 @@
+body {
+    font-family:sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bem-vindo img {
+    width: 150px;
+}
+
+.bem-vindo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.login {
+    width: 100%;
+    max-width: 300px;
+}
+
+.login h1 {
+    margin-bottom: 1rem;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    margin-bottom: 0.5rem;
+}
+
+.login input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.login button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #61fc85d3;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.login button:hover {
+    background-color: #84af85f9;
+}

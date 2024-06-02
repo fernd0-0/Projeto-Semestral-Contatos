@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Gw Contacts</title>
+    <link rel="stylesheet" href="./css/style_cadastro.css">
+    <link rel="shortcut icon" href="./src/imagens/GW-logo-icon.png" type="image/x-icon">
+</head>
+<body>
+<main class="container">
+    <div class="bem-vindo">
+        <img src="./src/imagens/gw.png" alt="Logo">
+        <br><br><br>
+        <span>Sua agenda Digital</span>
+    </div>
+    <div class="login">
+        <h1>Cadastro</h1>
+        <form id="signupForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="signupButton">Cadastrar</button>
+            <button type="button" onclick="window.location.href='login.html'">Voltar para Login</button>
+        </form>
+    </div>
+</main>
+<script src="./js/signup.js"></script>
+</body>
+</html>

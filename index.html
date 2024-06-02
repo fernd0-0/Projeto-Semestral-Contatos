@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <script defer src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
+    <link rel="shortcut icon" href="./src/imagens/GW-logo-icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="navbar" id="inicio">
+            <div class="logo"><img src="./src/imagens/gw.png" alt=""></div>
+            <a href="#inicio">Inicio</a>
+            <a href="#cadastro">Cadastro de contato</a>
+            <a href="#cards">Contatos</a>
+        </div>
+        <div class="login">
+            <a href="login.html">login</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h1 class="titulo_intro">Projeto Contato</h1>
+            <div class="principal">
+                <div class="principal-foto">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./src/imagens/imagen-1.jpeg" alt="Imagem 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/imagens/imagen-2.jpeg" alt="Imagem 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./src/imagens/imagen-3.jpg" alt="Imagem 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+                <div class="texto_intro-sobre">
+                    <div class="texto_sobre">
+                        <h2>Sobre a nossa Ideia</h2>
+                        <p>Este projeto de contatos não é apenas uma ferramenta para armazenar informações, mas um passo importante para organizar e otimizar a comunicação em vários aspectos da vida diária. Através de uma implementação cuidadosa e focada nas necessidades dos usuários, pretendemos criar uma solução robusta e eficiente que simplifique a gestão de contatos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="titulo_cadastro" id="cadastro">Cadastro de Contatos</h2>
+        <div class="cadastro-tela">
+            <form id="contactForm">
+                <input type="hidden" id="contactId">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" class="form-control" id="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">URL da Imagem:</label>
+                    <input type="url" class="form-control" id="image" required>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Adicionar Contato</button>
+                <button type="button" class="btn btn-primary" id="saveBtn" style="display: none;">Salvar</button>
+            </form>
+        </div>
+        <hr>
+        <br><br>
+        <div class="filtro-de-contatos">
+            <h3>Buscar Contatos:</h3>
+            <div class="form-group">
+                <label for="filterId">ID do Contato:</label>
+                <input type="number" class="form-control" id="filterId">
+                <button class="btn btn-secondary" id="filterButton">Filtrar</button>
+            </div>
+        </div>
+        <div class="lista_de_contatos">
+            <h3 id="cards">Lista de Contatos</h3>
+            <div class="card-container" id="contactsContainer">
+                <!-- Contatos serão inseridos aqui -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
